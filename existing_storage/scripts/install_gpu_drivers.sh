@@ -21,7 +21,7 @@ has_gpu_driver=$?
 if [ $has_gpu_driver -ne 0 ]; then
   # Install Nvidia
   echo "Installing Nvidia drivers."
-  deb_name=http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_ppc64el.deb
+  deb_name=http://us.download.nvidia.com/tesla/440.33.01/nvidia-driver-local-repo-ubuntu1804-440.33.01_1.0-1_ppc64el.deb
   wget ${deb_name}
   dpkg -i nvidia-driver-local-repo-ubuntu*.deb
   apt-key add /var/nvidia-driver-local*/*.pub
