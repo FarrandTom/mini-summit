@@ -2,8 +2,8 @@ output "wmlce_token" {
   value = "${random_password.wmlce_token.result}"
 }
 
-output "wmlce_url" {
-    value = "https://${ibm_is_floating_ip.fip1.address}:443/token"
+output "jupyterlab_url" {
+    value = "https://${ibm_is_floating_ip.fip1.address}:443/lab"
 }
 
 output "vm_private_key" {
