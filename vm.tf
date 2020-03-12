@@ -31,14 +31,8 @@ variable "vm_name" {
     description = "Name of the new VM to be provisioned."
 }
 
-variable "volume_name" {
-  description = "Name of the block storage volume which will be used to persist data."
-  default = "persistent-data-volume"
-}
-
-variable "volume_capacity" {
-  description = "The size in GB of the block storage volume in which data and logs will be persisted."
-  default = 100
+variable "block_storage_volume_id" {
+    description = "The block storage volume ID within your VPC where user data is persisted."
 }
 
 data ibm_is_vpc "vpc" {
@@ -61,13 +55,6 @@ resource "ibm_is_floating_ip" "fip1" {
   target = "${ibm_is_instance.vm.primary_network_interface.0.id}"
 }
 
-resource "ibm_is_volume" "block_storage_volume" {
-  name     = "${var.volume_name}"
-  profile  = "general-purpose"
-  zone     = "${var.vpc_zone}"
-  capacity = "${var.volume_capacity}"
-}
-
 resource "ibm_is_instance" "vm" {
   name = "${var.vm_name}"
   image = "${data.ibm_is_image.ubuntu.id}"
@@ -86,7 +73,7 @@ resource "ibm_is_instance" "vm" {
   ]
 
   volumes = [
-      "${ibm_is_volume.block_storage_volume.id}"
+      "${var.block_storage_volume_id}"
   ]
 
   timeouts {
@@ -157,7 +144,7 @@ ENDENVTEMPL
       "/tmp/scripts/wait_bootfinished.sh",
       "/tmp/scripts/install_gpu_drivers.sh",
       "/tmp/scripts/mount_block_store.sh",
-      "/tmp/scripts/install_wmlce.sh ${random_password.wmlce_token.result}",
+      "/tmp/scripts/start_jupyter.sh ${random_password.wmlce_token.result}",
       "/tmp/scripts/ramdisk_tmp_destroy.sh",          
       "rm -rf /tmp/scripts"
     ]
