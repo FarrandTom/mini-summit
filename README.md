@@ -33,3 +33,4 @@ The VPC environment is incredibly flexible, and can be scaled out or up- feel fr
 * Ensure good user experience
 * Back up and archiving through linkage to a COS bucket.
 * Automated test suite for the environment- simply Jupyter NB which can be dropped in to test all of the major packages are functioning correctly.
+* Automate grabbing of ID values by entering the names of the components. This could be done through a python script I'm sure.
