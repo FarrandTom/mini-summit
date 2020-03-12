@@ -11,7 +11,7 @@ It includes the popular deep learning packages (TensorFlow, PyTorch), optimised 
 WMLCE runs on both POWER and x86 CPU architectures, however expect to see the best performance when running on POWER chips. This repo deploys onto the POWER architecture, specifically an AC922- the GPU accelerated server which powers the world's first and second largest supercomputers [Summit](https://www.top500.org/system/179397) and [Sierra](https://www.top500.org/system/179398).
 
 ### What is IBM Virtual Private Cloud?
-IBM Cloud Virtual Private Cloud (VPC) is your own protected space in the IBM Cloud. Use VPCs to isolate and provision network segments on the IBM Cloud where you can deploy and manage compute, storage and networking cloud resources. Connect VPCs to your on-premises resources to expand available capacity during peak usage times. 
+[IBM Cloud Virtual Private Cloud (VPC)](https://www.ibm.com/cloud/vpc) is your own protected space in the IBM Cloud. Use VPCs to isolate and provision network segments on the IBM Cloud where you can deploy and manage compute, storage and networking cloud resources. Connect VPCs to your on-premises resources to expand available capacity during peak usage times. 
 
 In this instance, we'll be using VPC for it's access to powerful AC922 compute instances. Through Terraform we will automatically provision the infrastructure, and then install WMLCE on top of that. The result will be a development environment using a Jupyter Lab front end, serving a WMLCE conda environment. 
 
