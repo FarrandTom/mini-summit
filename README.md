@@ -1,7 +1,7 @@
 # Get Up and Running With Watson Machine Learning Community Edition (WMLCE)
 ## This repository will show you how to setup a WMLCE environment running on the AC922 in IBM Cloud.
 
-### What is Watson Machie Learning Community Edition?
+### What is Watson Machine Learning Community Edition?
 [WMLCE](https://www.ibm.com/support/knowledgecenter/en/SS5SF7) is a tightly integrated, tested, and supported bundle of open source Python frameworks/libraries for tackling machine & deep learning problems. The software distributions are pre-compiled and include everything you need to build and manage a distributed environment, including the deep learning frameworks and any supporting software components that they require to run. 
 
 It includes the popular deep learning packages (TensorFlow, PyTorch), optimised model distribution libraries (Horovod), and GPU-accelerated machine learning libraries (XGBoost, RAPIDS). Furthermore, there are powerful IBM technologies included too:
