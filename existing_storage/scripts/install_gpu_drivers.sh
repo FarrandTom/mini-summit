@@ -26,7 +26,7 @@ if [ $has_gpu_driver -ne 0 ]; then
   dpkg -i nvidia-driver-local-repo-ubuntu*.deb
   apt-key add /var/nvidia-driver-local*/*.pub
   apt-get -o Dpkg::Use-Pty=0 update -qq
-  apt-get -o Dpkg::Use-Pty=0 install -qq nvidia-driver-418
+  apt-get -o Dpkg::Use-Pty=0 install -qq nvidia-driver-440
 
   # Purge the repo
   dpkg -P `dpkg -l | grep nvidia-driver-local-repo-ubuntu | cut -d " " -f 3`
