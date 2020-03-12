@@ -1,19 +1,17 @@
-# Create a new WMLCE instance in an existing VPC
+# Create a new Watson Machine Learning Community Edition (WMLCE) environment in an existing VPC
 
 ## Introduction
 This workflow should be used to provision a new WMLCE instance inside of an existing VPC, and attach it to an existing block storage volume e.g. to continue working on a project.
 
-This repository is a companion to the one found [here](https://github.ibm.com/Thomas-Farrand/create_vpc_cluster)- which describes how to create a VPC cluster from scratch, and includes detailed documentation. 
+This repository holds the containing code to provision a dedicated environment of WMLCE in IBM Cloud utilizing IBM Cloud Schematics- infrastructure as code powered by Terraform. The dedicated instance of WMLCE is deployed to an existing VPC environment, and attached to an existing partitioned and formatted block storage device. Once created, the environment's public IP address, along with an access token to log into Jupyterlab will be displayed for easy access. 
 
-This repository holds the containing code to provision a dedicated instance of PowerAI Vision (PAIV) Trial Edition in IBM Cloud utilizing IBM Cloud Schematics- infrastructure as code powered by Terraform. The dedicated instance of PAIV is deployed to an existing VPC environment, and attached to an existing partitioned and formatted block storage device. Once created, the PowerAI Vision's public IP address along with a username and password to log into the application will be displayed for easy access. 
-
-The PowerAI Vision licence provided will expire 90 days from creation. The end-to-end process takes approximately 15 minutes from initiation to logging into a dedicated instance. This time is likely to fall in the future as pre-loaded images of PowerAI Vision are made available. 
+As the existing block storage device should have stored the anaconda installation, and the user generated data there is no software to install. Therefore, the end-to-end process should take approximately 5 minutes from initiation to logging into a dedicated instance.
 
 ## What do I get?
 The following resources are provisioned throughout the deployment:
 
-* Virtual Server Instance (VSI) within the VPC and a particular region and availability zone (AZ). PowerAI Vision is freshly installed onto each VSI provisioned- which act as your compute nodes. A VSI is equivalent to a VM, and the terms will be used interchangeably. 
-* Floating IP (FIP) address on the public Internet
+* Virtual Server Instance (VSI) within the VPC and a particular region and availability zone (AZ). A VSI is equivalent to a VM, and the terms will be used interchangeably. 
+* Floating IP (FIP) address on the public Internet. This can be checked through the VPC GUI, found [here]()
 
 VSIs can be stopped and destroyed with user data being persisted in the block storage volume. New instances of PAIV can then be added using either:
 * This repository
