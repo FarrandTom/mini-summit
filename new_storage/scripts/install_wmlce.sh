@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+RUN_DIR=/home/volume
+
 # Install Perl - In order to use Spectrum MPI with IBM Distributed Deep Learning and SnapML, Perl must be installed on the system.
 sudo apt install perl
 
@@ -26,5 +28,6 @@ conda install jupyterlab --yes --quiet
 
 ## Start Jupyter Lab
 echo "Starting Jupyter Lab..."
+cd ${RUN_DIR}
 nohup jupyter lab --ip=0.0.0.0 --allow-root --port 443 --no-browser --NotebookApp.token="$1" > error.log &
 echo "Jupyter lab up and running!"
