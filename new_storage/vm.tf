@@ -42,7 +42,7 @@ variable "volume_capacity" {
 }
 
 data ibm_is_vpc "vpc" {
-    name = "${var.vpc_basename}-vpc1" 
+    name = "${var.vpc_basename}" 
 }
 
 data ibm_is_image "ubuntu" {
