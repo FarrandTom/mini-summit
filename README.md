@@ -32,3 +32,4 @@ The VPC environment is incredibly flexible, and can be scaled out or up- feel fr
 * Provide ability for multi-tenancy through the use of JupyterHub
 * Ensure good user experience
 * Back up and archiving through linkage to a COS bucket.
+* Automated test suite for the environment- simply Jupyter NB which can be dropped in to test all of the major packages are functioning correctly.
