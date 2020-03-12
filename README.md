@@ -21,3 +21,14 @@ The VPC environment is incredibly flexible, and can be scaled out or up- feel fr
 * **Start from Scratch**: To create your VPC cluster click here.
 * **Add New Users**: To spin up a new WMLCE environment and add new persistent storage to it, within an existing VPC cluster, click [here](https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/new_storage). 
 * **Continue a Project**: To spin up a new WMLCE environment, attach existing persistent storage to it, within an existing VPC cluster, click [here](https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/existing_storage).
+
+
+### Things to note:
+* Connection is not secured over HTTPS. Therefore you are exposed to person-in-the-middle style attacks, and should not upload confidential data. In a future release I will fix this.
+* Better way to keep the latest NVIDIA drivers, alongside the latest WMLCE version.
+
+### To Do:
+* Figure out SSL so connection is secure
+* Provide ability for multi-tenancy through the use of JupyterHub
+* Ensure good user experience
+* Back up and archiving through linkage to a COS bucket.
