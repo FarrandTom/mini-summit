@@ -19,5 +19,5 @@ The VPC environment is incredibly flexible, and can be scaled out or up- feel fr
 
 ### Where next?
 * To create your VPC cluster click here.
-* To spin up a new WMLCE environment and add new persistent storage to it, within an existing VPC cluster, click here. 
-* To spin up a new WMLCE environment, attach existing persistent storage to it, within an existing VPC cluster, click here.
+* To spin up a new WMLCE environment and add new persistent storage to it, within an existing VPC cluster, click [here](https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/new_storage). 
+* To spin up a new WMLCE environment, attach existing persistent storage to it, within an existing VPC cluster, click [here](https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/existing_storage).
