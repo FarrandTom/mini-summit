@@ -3,7 +3,7 @@ output "wmlce_token" {
 }
 
 output "jupyterlab_url" {
-    value = "https://${ibm_is_floating_ip.fip1.address}:443/lab"
+    value = "http://${ibm_is_floating_ip.fip1.address}:443/lab"
 }
 
 output "vm_private_key" {
