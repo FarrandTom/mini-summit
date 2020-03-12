@@ -33,7 +33,7 @@ if [ $has_gpu_driver -ne 0 ]; then
   apt-get clean -y
   rm nvidia-driver-local-repo-*.deb
   systemctl daemon-reload
-  systemctl enable nvidia-persistenced
+  systemctl enable nvidia-persistenced --now
   nvidia-smi
 else
   echo "Nvidia drivers installed on machine already. Skipping install of drivers."
