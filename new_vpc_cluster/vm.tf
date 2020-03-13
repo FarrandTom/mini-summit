@@ -135,7 +135,7 @@ resource "ibm_is_instance" "vm" {
     subnet = "${ibm_is_subnet.subnet.id}"
   }
 
-  vpc = "${ibm_is_vpc.vpc.id}}"
+  vpc = "${ibm_is_vpc.vpc.id}"
   zone = "${var.vpc_zone}"
   //make this a variable when there's more than one option...
   keys = [
