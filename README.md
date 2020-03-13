@@ -1,3 +1,4 @@
+![Summit image](https://github.com/FarrandTom/vpc-cloud-wmlce/blob/master/readme-images/summit.png)
 # Build Your Own Mini-Summit Supercomputer!
 ## This repository will show you how to setup a Watson ML Community Edition environment running on the [AC922](https://www.ibm.com/uk-en/marketplace/power-systems-ac922?cm_mmc=Search_Google-_-Systems_Systems+-+Power-_-WW_IUK-_-ac922_e&cm_mmca1=000038PQ&cm_mmca2=10009402&cm_mmca7=1006613&cm_mmca8=aud-837641639994:kwd-390487818696&cm_mmca9=Cj0KCQjw3qzzBRDnARIsAECmryqQvgJ-sOed6oFZPP__o0cdMu3iU7aPdgsBbXgETNIQrPAAOoNa6nwaAvchEALw_wcB&cm_mmca10=376016768572&cm_mmca11=e&gclid=Cj0KCQjw3qzzBRDnARIsAECmryqQvgJ-sOed6oFZPP__o0cdMu3iU7aPdgsBbXgETNIQrPAAOoNa6nwaAvchEALw_wcB&gclsrc=aw.ds) in IBM Cloud.
 
