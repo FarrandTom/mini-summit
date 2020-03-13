@@ -4,7 +4,7 @@
 ## Introduction
 This repository holds the containing code to provision a dedicated instance of [Watson Machine Learning Community Edition](https://www.ibm.com/support/knowledgecenter/en/SS5SF7_1.7.0/navigation/welcome.html) in the IBM Cloud utilizing IBM Cloud Schematics- infrastructure as code powered by Terraform. The dedicated instance of WMLCE is deployed to IBM's Virtual Private Cloud (VPC) infrastructure. 
 
-Once created, its public IP address along with token to log into the application will be displayed for easy access. 
+Once created, a public IP address along with token to log into Jupyterlab will be displayed for easy access. The Jupyterlab front end acts as the workbench for the instance, but you can also access the VM directly by SSH. 
 
 The time taken for the end-to-end process to occur is heavily dependent on the Python packages which are selected to be installed on the Virtual Server Instance (VSI). The default packages which are installed are the WMLCE bundle, and Jupyterlab. With these packages the end-to-end process takes approximately 40 minutes from initiation to logging into a dedicated instance. The majority of this time is downloading and installing the approximate ~3GB of packages which comprise WMLCE. Therefore, if you solely wanted, for example, TensorFlow then this time will dramatically fall. 
 
