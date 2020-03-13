@@ -21,7 +21,7 @@ VSIs can be stopped and destroyed with user data being persisted in the block st
 * This repository
 
 ## How do I use this repo?
-Ensure you have a working VPC environment by following the steps found in this [parent repository](https://github.ibm.com/Thomas-Farrand/create_vpc_cluster).
+Ensure you have a working VPC environment by following the steps found [here](https://github.ibm.com/Thomas-Farrand/create_vpc_cluster).
 
 Then follow the step-by-step workflow in this [repository's wiki]().
 
