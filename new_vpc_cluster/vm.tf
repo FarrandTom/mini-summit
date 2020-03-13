@@ -41,6 +41,11 @@ variable "volume_capacity" {
   default = 100
 }
 
+variable "python_package_list" {
+  description = "A space separated list of the Python packages you wish to install in the environment. Jupyterlab is always installed. e.g. powerai scipy django"
+  default = "powerai"
+}
+
 data ibm_is_image "ubuntu" {
     name = "ibm-ubuntu-18-04-3-minimal-ppc64le-2"
 }
@@ -213,7 +218,7 @@ ENDENVTEMPL
       "/tmp/scripts/wait_bootfinished.sh",
       "/tmp/scripts/install_gpu_drivers.sh",
       "/tmp/scripts/mount_block_store.sh",
-      "/tmp/scripts/install_wmlce.sh ${random_password.wmlce_token.result}",
+      "/tmp/scripts/install_wmlce.sh ${random_password.wmlce_token.result} ${var.python_package_list}",
       "/tmp/scripts/ramdisk_tmp_destroy.sh",          
       "rm -rf /tmp/scripts"
     ]

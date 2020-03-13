@@ -23,7 +23,7 @@ conda activate wmlce_env
 
 ## Install WMLCE
 export IBM_POWERAI_LICENSE_ACCEPT=yes
-conda install powerai --yes --quiet
+conda install --yes --quiet $2
 conda install jupyterlab --yes --quiet
 
 ## Start Jupyter Lab
