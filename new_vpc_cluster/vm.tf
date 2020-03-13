@@ -28,7 +28,7 @@ variable "vm_profile" {
 }
 
 variable "python_package_list" {
-  description = "A space separated list of the Python packages you wish to install in the environment. Jupyterlab is always installed. e.g. powerai scipy django"
+  description = "A comma separated list of the Python packages you wish to install in the environment. Jupyterlab is always installed. e.g. powerai,scipy,scikit-learn"
   default = "powerai"
 }
 

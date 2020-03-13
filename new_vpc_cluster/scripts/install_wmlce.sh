@@ -23,7 +23,12 @@ conda activate wmlce_env
 
 ## Install WMLCE
 export IBM_POWERAI_LICENSE_ACCEPT=yes
-conda install --yes --quiet $2
+# Iterate over comma separated list of python packages provided by the user
+IFS=","
+for v in $2
+do
+   conda install --yes --quiet $v
+done
 conda install jupyterlab --yes --quiet
 
 ## Start Jupyter Lab
