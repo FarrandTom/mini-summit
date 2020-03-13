@@ -1,4 +1,5 @@
-# Create a new PowerAI Vision instance and a new block storage volume in a VPC
+# Add New Users
+## Create a new PowerAI Vision instance and a new block storage volume in a VPC
 
 ## Introduction
 This workflow should be used to provision a new PowerAI Vision instance and block storage volume e.g. to start working on a new project within an existing VPC environment.
@@ -23,6 +24,6 @@ VSIs can be stopped and destroyed with user data being persisted in the block st
 ## How do I use this repo?
 Ensure you have a working VPC environment by following the steps found [here](https://github.ibm.com/Thomas-Farrand/create_vpc_cluster).
 
-Then follow the step-by-step workflow in this [repository's wiki]().
+Then follow the step-by-step workflow in this [wiki](https://github.com/FarrandTom/vpc-cloud-wmlce/wiki/Add-New-Users).
 
 -------------------------------------------------------------------------------------------------------------------------------
