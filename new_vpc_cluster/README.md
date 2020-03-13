@@ -1,4 +1,5 @@
-# Create a new Watson Machine Learning Community Edition (WMLCE) environment in a New Virtual Private Cloud (VPC)!
+# Start From Scratch
+## Create a new Watson Machine Learning Community Edition (WMLCE) environment in a New Virtual Private Cloud (VPC)!
 
 ## Introduction
 This repository holds the containing code to provision a dedicated instance of [Watson Machine Learning Community Edition](https://www.ibm.com/support/knowledgecenter/en/SS5SF7_1.7.0/navigation/welcome.html) in the IBM Cloud utilizing IBM Cloud Schematics- infrastructure as code powered by Terraform. The dedicated instance of WMLCE is deployed to IBM's Virtual Private Cloud (VPC) infrastructure. 
@@ -30,6 +31,6 @@ The high-level workflow to get up and running with WMLCE on the IBM Cloud is as 
 2. Fill in the necessary credentials
 3. Go!
 
-The step-by-step workflow can be found in this [repository's wiki]().
+The step-by-step workflow can be found in this [repository's wiki](https://github.com/FarrandTom/vpc-cloud-wmlce/wiki/Start-from-Scratch).
 
 -------------------------------------------------------------------------------------------------------------------------------
