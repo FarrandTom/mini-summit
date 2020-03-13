@@ -27,6 +27,11 @@ variable "vm_profile" {
   default = "gp2-24x224x2"
 }
 
+variable "python_package_list" {
+  description = "A space separated list of the Python packages you wish to install in the environment. Jupyterlab is always installed. e.g. powerai scipy django"
+  default = "powerai"
+}
+
 variable "volume_name" {
   description = "Name of the block storage volume which will be used to persist data."
   default = "persistent-data-volume"
@@ -35,11 +40,6 @@ variable "volume_name" {
 variable "volume_capacity" {
   description = "The size in GB of the block storage volume in which data and logs will be persisted."
   default = 100
-}
-
-variable "python_package_list" {
-  description = "A space separated list of the Python packages you wish to install in the environment. Jupyterlab is always e.g. powerai scipy django"
-  default = "powerai"
 }
 
 data ibm_is_image "ubuntu" {
