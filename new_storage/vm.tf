@@ -18,17 +18,22 @@ variable "vpc_zone" {
   default = "us-south-1"
 }
 
-variable "vm_profile" {
-  description = "What resources or VM profile should we create for compute? gp2-24x224x2 provides 2 GPUs and 224GB RAM"
-  default = "gp2-24x224x2"
-}
-
 variable "subnet_id" {
     description = "ID of the existing subnet to attach onto."
 }
 
 variable "vm_name" {
     description = "Name of the new VM to be provisioned."
+}
+
+variable "vm_profile" {
+  description = "What resources or VM profile should we create for compute? gp2-24x224x2 provides 2 GPUs and 224GB RAM"
+  default = "gp2-24x224x2"
+}
+
+variable "python_package_list" {
+  description = "A comma separated list of the Python packages you wish to install in the environment. Jupyterlab is always installed. e.g. powerai,scipy,scikit-learn"
+  default = "powerai"
 }
 
 variable "volume_name" {
@@ -157,7 +162,7 @@ ENDENVTEMPL
       "/tmp/scripts/wait_bootfinished.sh",
       "/tmp/scripts/install_gpu_drivers.sh",
       "/tmp/scripts/mount_block_store.sh",
-      "/tmp/scripts/install_wmlce.sh ${random_password.wmlce_token.result}",
+      "/tmp/scripts/install_wmlce.sh ${random_password.wmlce_token.result} ${var.python_package_list}",
       "/tmp/scripts/ramdisk_tmp_destroy.sh",          
       "rm -rf /tmp/scripts"
     ]
