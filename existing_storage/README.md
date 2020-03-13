@@ -1,4 +1,5 @@
-# Create a new WMLCE environment, attached to an existing block storage, in an existing VPC.
+# Continue a Project
+## Create a new WMLCE environment, attached to an existing block storage, in an existing VPC.
 
 ## Introduction
 This workflow should be used to provision a new WMLCE instance inside of an existing VPC, and attach it to an existing block storage volume e.g. to continue working on a project.
@@ -21,6 +22,6 @@ https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/new_storage
 ## How do I use this repo?
 Ensure you have a working VPC environment by following the steps found [here](https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/new_vpc_cluster).
 
-Then follow the step-by-step workflow in this [repository's wiki]().
+Then follow the step-by-step workflow in this [wiki](https://github.com/FarrandTom/vpc-cloud-wmlce/wiki/Continue-a-Project).
 
 -------------------------------------------------------------------------------------------------------------------------------
