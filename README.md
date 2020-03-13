@@ -18,7 +18,7 @@ In this instance, we'll be using VPC for it's access to powerful AC922 compute i
 The VPC environment is incredibly flexible, and can be scaled out or up- feel free to clone and customise the code to suit your needs. 
 
 ### Where next?
-* **Start from Scratch**: To create your VPC cluster click here.
+* **Start from Scratch**: To create your VPC cluster click [here](https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/new_vpc_cluster).
 * **Add New Users**: To spin up a new WMLCE environment and add new persistent storage to it, within an existing VPC cluster, click [here](https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/new_storage). 
 * **Continue a Project**: To spin up a new WMLCE environment, attach existing persistent storage to it, within an existing VPC cluster, click [here](https://github.com/FarrandTom/vpc-cloud-wmlce/tree/master/existing_storage).
 
