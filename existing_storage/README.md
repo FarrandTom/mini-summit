@@ -1,4 +1,4 @@
-# Create a new Watson Machine Learning Community Edition (WMLCE) environment in an existing VPC
+# Create a new WMLCE environment, attached to an existing block storage, in an existing VPC.
 
 ## Introduction
 This workflow should be used to provision a new WMLCE instance inside of an existing VPC, and attach it to an existing block storage volume e.g. to continue working on a project.
