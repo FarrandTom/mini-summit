@@ -31,6 +31,6 @@ The high-level workflow to get up and running with WMLCE on the IBM Cloud is as 
 2. Fill in the necessary credentials
 3. Go!
 
-The step-by-step workflow can be found in this [repository's wiki](https://github.com/FarrandTom/vpc-cloud-wmlce/wiki/Start-from-Scratch).
+The step-by-step workflow can be found in this [wiki](https://github.com/FarrandTom/vpc-cloud-wmlce/wiki/Start-from-Scratch).
 
 -------------------------------------------------------------------------------------------------------------------------------
