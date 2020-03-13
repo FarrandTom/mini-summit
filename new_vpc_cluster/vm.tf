@@ -58,7 +58,7 @@ resource "ibm_is_ssh_key" "public_key" {
 
 #Create a VPC for the application
 resource "ibm_is_vpc" "vpc" {
-  name = "${var.vpc_basename}-vpc1"
+  name = "${var.vpc_basename}"
 }
 
 #Create a subnet for the application
