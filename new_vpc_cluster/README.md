@@ -17,7 +17,7 @@ The following resources are provisioned throughout the deployment:
 * Security group that allows ingress traffic on port 443 (SSL) and on port 22 (for debug)
 * Block storage volume where user generated data is persisted even after the instance is destroyed.
 
-![VPC architecture](https://github.ibm.com/Thomas-Farrand/create_vpc_cluster/blob/master/readme-images/architecture.png)
+![VPC architecture](https://github.com/FarrandTom/vpc-cloud-wmlce/blob/master/readme-images/architecture.png)
   
 VSIs can be stopped and destroyed with user data being persisted in the block storage volume. New instances of PAIV can then be added using either:
 * An existing block storage volume, i.e. to continue work on a previous project, via https://github.ibm.com/Thomas-Farrand/create_new_vm
