@@ -18,17 +18,13 @@ variable "vpc_zone" {
   default = "us-south-1"
 }
 
+variable "vm_name" {
+    description = "Name of the new VM to be provisioned."
+}
+
 variable "vm_profile" {
   description = "What resources or VM profile should we create for compute? gp2-24x224x2 provides 2 GPUs and 224GB RAM"
   default = "gp2-24x224x2"
-}
-
-variable "subnet_id" {
-    description = "ID of the existing subnet to attach onto."
-}
-
-variable "vm_name" {
-    description = "Name of the new VM to be provisioned."
 }
 
 variable "volume_name" {
