@@ -42,7 +42,7 @@ variable "volume_capacity" {
 }
 
 variable "python_package_list" {
-  description = "A space separated list of the Python packages you wish to install in the environment. Jupyterlab is always installed. e.g. powerai scipy django"
+  description = "A space separated list of the Python packages you wish to install in the environment. Jupyterlab is always e.g. powerai scipy django"
   default = "powerai"
 }
 
